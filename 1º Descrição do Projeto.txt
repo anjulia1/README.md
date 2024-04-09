@@ -1,0 +1,82 @@
+1º Descrição do Projeto:
+Descrição: Este projeto implementa uma série de algoritmos de ordenação em C++ e realiza testes de desempenho para compará-los.
+
+2º Instruções de Uso:
+Compilação: Para compilar o programa, utilize um compilador C++ padrão.
+Execução: Após compilar, execute o programa fornecendo os tamanhos dos vetores de teste como argumentos da linha de comando.
+
+3º Explicação dos Algoritmos de Ordenação:
+Bubble Sort:
+Descrição: Algoritmo simples que percorre repetidamente a lista, compara elementos adjacentes e os troca se estiverem na ordem errada.
+Complexidade Computacional:
+Melhor Caso: O(n)
+Pior Caso: O(n^2)
+
+Selection Sort:
+Descrição: Seleciona o menor elemento da lista e o coloca na posição correta, repetindo esse processo até que toda a lista esteja ordenada.
+Complexidade Computacional:
+Melhor Caso: O(n^2)
+Pior Caso: O(n^2)
+
+Insertion Sort:
+Descrição: Itera pela lista e insere cada elemento na posição correta, mantendo os elementos à esquerda sempre ordenados.
+Complexidade Computacional:
+Melhor Caso: O(n)
+Pior Caso: O(n^2)
+
+Shell Sort:
+Descrição: Versão mais eficiente do insertion sort que divide a lista em subgrupos menores e os ordena separadamente.
+Complexidade Computacional:
+Melhor Caso: Depende da sequência de incremento. Em algumas implementações, pode ser O(n log^2(n)).
+Pior Caso: Depende da sequência de incremento. Em algumas implementações, pode ser O(n log^2(n)).
+
+Quick Sort:
+Descrição: Divide a lista em subgrupos menores em torno de um pivô e ordena esses subgrupos recursivamente.
+Complexidade Computacional:
+Melhor Caso: O(n log(n))
+Pior Caso: O(n^2)
+
+Merge Sort:
+Descrição: Divide a lista em metades, ordena cada metade separadamente e, em seguida, combina as metades ordenadas.
+Complexidade Computacional:
+Melhor Caso: O(n log(n))
+Pior Caso: O(n log(n))
+
+4º Descrição das Funções:
+imprimirVetor: Imprime os elementos de um vetor na saída padrão.
+gerarVetorAleatorio: Gera um vetor de inteiros aleatórios de tamanho n.
+medirTempoOrdenacao: Mede o tempo de execução de uma função de ordenação para um vetor específico.
+bubbleSort: Implementa o algoritmo Bubble Sort para ordenar um vetor.
+selectionSort: Implementa o algoritmo Selection Sort para ordenar um vetor.
+insertionSort: Implementa o algoritmo Insertion Sort para ordenar um vetor.
+shellSort: Implementa o algoritmo Shell Sort para ordenar um vetor.
+quickSort: Implementa o algoritmo Quick Sort para ordenar um vetor.
+mergeSort: Implementa o algoritmo Merge Sort para ordenar um vetor.
+
+
+
+5º Exemplos de Uso: 
+Nosso código com algoritmos de ordenação, como Bubble Sort, Selection Sort, Insertion Sort, Shell Sort, Quick Sort e Merge Sort pode ser super útil em diferentes situações. Esses são alguns exemplos bem simples de como pode ser utilizado.
+
+Análise de Desempenho de Algoritmos: 
+Um estudante ou desenvolvedor interessado em entender a eficiência de diferentes algoritmos de ordenação pode usar seu código para gerar dados e comparar o tempo que cada algoritmo leva para ordenar o mesmo conjunto de dados.
+
+Preparação de Dados para Análise: 
+Em projetos de ciência de dados ou qualquer aplicação que requeira pré-processamento de dados, os algoritmos de ordenação podem ser usados para organizar os dados antes de análises mais complexas.
+
+Desenvolvimento de Jogos ou Aplicações: 
+Em um jogo, por exemplo, você pode querer ordenar jogadores ou objetos com base em suas pontuações ou alguma outra métrica para exibição em uma tabela de classificação.
+
+
+
+6º Resultados dos Testes de Desempenho:
+
+Tamanho do Vetor    | Bubble Sort (ms) | Selection Sort (ms) | Insertion Sort (ms) | Shell Sort (ms) | Quick Sort (ms) | Merge Sort (ms)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+10                 | 0.001            | 0.001               | 0                    |0.001	     |	0.001	       | 0.008
+100                | 0.11             | 0.051               | 0.031                | 0.019	     |  0.02           | 0.077
+1000               | 25.957           | 4.862               | 4.104                | 0.323	     |	0.386 	       | 0.957
+10000              | 1067.97          | 386.382             | 221.707              | 5.221	     | 	3.839	       | 8.506
+100000             | killed           | killed              | killed               | killed          |  killed 	       | killed 
+
+Durante a execução do programa para ordenar um vetor de 100000 elementos, o processo foi inesperadamente terminado com a mensagem "Killed". Isso geralmente acontece quando o programa está usando mais memória do que o computador pode fornecer, especialmente quando se usam métodos de organização que não são muito eficientes para listas grandes.
