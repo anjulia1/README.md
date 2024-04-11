@@ -72,11 +72,12 @@ Em um jogo, por exemplo, você pode querer ordenar jogadores ou objetos com base
 6º Resultados dos Testes de Desempenho:
 
 Tamanho do Vetor    | Bubble Sort (ms) | Selection Sort (ms) | Insertion Sort (ms) | Shell Sort (ms) | Quick Sort (ms) | Merge Sort (ms)
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-10                 | 0.001            | 0.001               | 0                    |0.001	     |	0.001	       | 0.008
-100                | 0.11             | 0.051               | 0.031                | 0.019	     |  0.02           | 0.077
-1000               | 25.957           | 4.862               | 4.104                | 0.323	     |	0.386 	       | 0.957
-10000              | 1067.97          | 386.382             | 221.707              | 5.221	     | 	3.839	       | 8.506
-100000             | killed           | killed              | killed               | killed          |  killed 	       | killed 
+--------------------------------------------------------------------------------------------------------------------------------------------
+10                  | 0.001             | 0.001               | 0                    | 0.001           | 0.001           | 0.009
+100                 | 0.115             | 0.051               | 0.036                | 0.02            | 0.019           | 0.09
+1000                | 10.527            | 3.852               | 2.58                 | 0.25            | 0.237           | 0.85
+10000               | 957.856           | 299.093             | 231.414              | 4.11            | 2.806           | 7.766
+100000              | 179160            | 118791              | 82693.6              | 212.991         | 110.183         | 385.037
+1000000             | killed            | killed              | killed               | killed          | killed          | killed
 
-Durante a execução do programa para ordenar um vetor de 100000 elementos, o processo foi inesperadamente terminado com a mensagem "Killed". Isso geralmente acontece quando o programa está usando mais memória do que o computador pode fornecer, especialmente quando se usam métodos de organização que não são muito eficientes para listas grandes.
+Durante a execução do programa para ordenar um vetor de 1000000 elementos, o processo foi inesperadamente terminado com a mensagem "Killed". Isso geralmente acontece quando o programa está usando mais memória do que o computador pode fornecer, especialmente quando se usam métodos de organização que não são muito eficientes para listas grandes.
